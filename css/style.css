@@ -1,0 +1,405 @@
+/* *****************************************css reset**************************** */
+*{
+   margin:0px;
+   padding:0px;
+}
+/************************************** navbar background ******************************/
+ #navbar::before{
+   content: "";
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-color: black;
+     height: 100%;
+    width: 100%; 
+    z-index: -2; 
+    opacity: .8;
+} 
+/* **********************************navbar css********************************** */
+#navbar{
+    display:flex;
+    position: fixed;
+    height:58px;
+    width: 100%;
+}
+.image {
+    width: 43px;
+    height: 41px;
+    padding:2px 5px;
+    margin:2px 3px;
+}
+.logo{
+    display: flex;
+    color:rgb(235, 225, 88);
+    justify-content: center;
+    align-items: center;
+    font-family: 'Balthazar', serif;
+    
+    /* text-decoration:underline rgb(144, 10, 10);
+    text-decoration-style: dotted; */
+}
+ul{
+    display:flex;
+    position:absolute;
+    right:10px;
+    top:3px;
+
+}
+#navbar ul li a{
+    text-decoration: none;
+    padding: 10px 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    transition:all .5s ease 0ms ;
+     
+     
+     
+/* #navbar ul li a:active{
+    text-decoration: underline red; */
+}
+#navbar ul li a:hover{
+    text-decoration: underline red 3px;
+ 
+}
+#navbar ul li{
+    list-style: none;
+    margin:20px 5px;
+}
+
+/*************************************home section css***************************************/
+#home{
+    color:black;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height:491px;
+    justify-content: center;
+    align-items: center;
+}
+#home p{
+    text-align: center;
+}
+
+#home::before{
+content: "";
+position:absolute;
+top:0px;
+left:0px;
+background: url(/images/1.jpg);
+width:100%;
+height: 500px;
+z-index: -1;
+opacity:.8;
+}
+.primary{
+    font-size: 2.7rem;
+    margin-bottom: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+/*********************************services section css*************************************/
+#services{
+   
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    /* background-color: rgba(0, 0, 0,.7); */
+    
+}
+.services{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* flex-wrap: wrap; */
+    text-align: center;
+}
+.box{
+     /* border:3px solid red; */
+     box-sizing: border-box;
+     margin: 22px;
+     padding :3px;
+    width: 30%;
+    height: 250px;
+    border-radius: 50px;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(202, 200, 163, 0.7);
+
+}
+h1,h2{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+.im_ser{
+    margin-bottom: 15px;
+    height: 81px;
+    width: 22%;
+}
+#services h1{
+   color:rgb(189, 171, 9);
+   font-family: 'DM Serif Display', serif;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+h2{
+margin-bottom: 10px;;
+}
+/* ******************************TESTIMONIALS SECTION CSS******************************** */
+#testimonials{
+    display: flex;
+    flex-direction: column;
+width: 100%;
+height: 380px;
+}
+#testimonials h1{
+  font-size: 2.5rem;
+    margin:10px 0px;
+    color:rgb(27, 26, 24);
+   font-family: 'DM Serif Display', serif;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+.testimonials{
+    display: flex;
+    flex-direction: row;
+/* padding:8px; */
+width: 100%;
+height: 300px;
+}
+.client{
+    /* border: 2px solid red; */
+    padding:8px;
+    margin:10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.t_img{
+    height: 149px;
+    width: 155px;
+    border-radius: 100px;
+}
+a{
+    text-decoration: none;
+    list-style-type: none;
+    color: rgb(189, 17, 89);
+}
+ #testimonials::before{
+   content: "";
+position:absolute;
+top:900px;
+left:0px;
+background: url(/images/testimonials.jpg);
+width:100%;
+height: 380px;
+z-index: -1;
+opacity:.3;
+
+}
+/* ***********************************Contact us Css*********************************** */
+#contact{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    height: 260px;
+    /* background-color: rgb(187, 187, 174); */
+
+}
+#contact h1{
+    font-size: 2.5rem;
+    margin:10px 0px;
+    color:rgb(0, 0, 0);
+   font-family: 'DM Serif Display', serif;
+   margin-top: 10px;
+   margin-bottom: 10px;
+
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+}
+.form{
+ padding: 5px 200px;
+ margin: 10px;  
+ text-align: center; 
+ border-radius: 20px;
+ border: 2px solid rgb(167, 167, 31);
+}
+.submit{
+    display: inline-block;
+    padding:4px 40px;
+    margin-left: 95px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+form{
+    display: inline-block;
+  
+  
+}
+#i_form{ 
+ height: 200px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+.details{
+    font-family: 'DM Serif Display', serif;
+    color: rgb(34, 30, 34);
+}
+#contact::before{
+    content: "";
+position:absolute;
+top: 1280px;
+left:0px;
+background: url(/images/contact.jpg);
+width:100%;
+height: 260px;
+z-index: -1;
+opacity:.5;
+
+}
+footer{
+    background-color: rgb(47, 44, 44)
+  
+}
+footer p{
+    color: white;
+    text-align: center;
+}
+/* ******************************Media Query****************************************** */
+@media only screen and (max-width: 400px) 
+{
+/* *******************************phone navbar************************** */
+#navbar{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: fixed;
+    height:100px;
+    width: 100%;
+}
+.logo{
+    display: flex;
+    color:rgb(235, 225, 88);
+    justify-content: center;
+    align-items: center;
+    font-family: 'Balthazar', serif;
+    
+    /* text-decoration:underline rgb(144, 10, 10);
+    text-decoration-style: dotted; */
+}
+
+ul{
+    right: 78px;
+    top: 36px;
+}
+
+#home::before{
+    content: "";
+    position:absolute;
+    top:0px;
+    left:0px;
+    background: url(/images/1.jpg);
+    width:754px;
+    height: 442px;
+    z-index: -1;
+    opacity:.8;
+    }
+    #home{
+        color:black;
+        width: 754px;
+        font-family: 'Ubuntu', sans-serif;
+        display: flex;
+        flex-direction: column;
+        height:442px;
+        justify-content: center;
+        align-items: center;
+    }
+    #services{
+      width: 754px;
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        /* background-color: rgba(0, 0, 0,.7); */
+        
+    }
+    .im_ser{
+        height: 120px;
+        width: 80%;
+    }
+    .box{
+        /* border:3px solid red; */
+        box-sizing: border-box;
+        margin: 22px;
+        padding :3px;
+       width: 30%;
+       height: 406px;
+       border-radius: 50px;
+       text-align: center;
+       justify-content: center;
+       background-color: rgba(202, 200, 163, 0.7);
+   
+   }
+   #testimonials{
+    display: flex;
+    flex-direction: column;
+width: 754px;
+height: 399px;
+}
+#testimonials::before{
+    content: "";
+ position:absolute;
+ top:950px;
+ left:0px;
+ background: url(/images/testimonials.jpg);
+ width:754px;
+ height: 410px;
+ z-index: -1;
+ opacity:.3;
+ 
+ }
+ #contact{
+    display: flex;
+    flex-direction:column;
+    width: 754px;
+    height: 260px;
+    /* background-color: rgb(187, 187, 174); */
+
+}
+
+#contact::before{
+    content: "";
+position:absolute;
+top: 1359px;
+left:0px;
+background: url(/images/contact.jpg);
+width:754px;
+height: 260px;
+z-index: -1;
+opacity:.5;
+
+}
+.form{
+    padding: 5px 100px;
+    margin: 10px;  
+    text-align: center; 
+    border-radius: 20px;
+    border: 2px solid rgb(167, 167, 31);
+   }
+   .submit{
+    display: inline-block;
+    padding:4px 40px;
+    margin-left: 43px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+footer{
+    background-color: rgb(47, 44, 44);
+    width: 754px;
+  
+}
+
+}
